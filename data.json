@@ -1,0 +1,45 @@
+{
+    "user" : {
+        "fullName": "Tshepo Magagula",
+        "photo" : "./images/Tshepo.jpg"
+    },
+    "city" : {
+        "name" : "Port Louis",
+        "photo" : "./images/PL.jpg",
+        "description" : " is the capital city of Mauritius, in the Indian Ocean. It's known for its French colonial architecture and the 19th-century Champ de Mars horse-racing track. The Caudan Waterfront is a lively dining and shopping precinct. Nearby, vendors sell local produce and handicrafts at the huge Central Market. The Blue Penny Museum focuses on the island’s colonial and maritime history, along with its culture."
+    },
+    "foreignLanguage" : {
+        "language" : "Spanish",
+        "phrases" : [
+            {
+                "englishPhrase" : "Hello, How do you do?",
+                "foreignLanguage" : "¿Hola cómo estás?"
+            },
+            {
+                "englishPhrase" : "I love you",
+                "foreignLanguage" : "Te amo"
+            },
+            {
+                "englishPhrase" : "Nothing lasts forever",
+                "foreignLanguage" : "Nada dura para siempre"
+            }
+        ]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Software Development 1B",
+            "description" : "./images/Csharp.jpg",
+            "isFloatRight": true
+        },
+        {
+            "name" : "Information Systems 3A",
+            "description" : "./images/SQL-Queries.jpg",
+            "isFloatRight": false
+        },
+        {
+            "name" : "IS Final Year Project",
+            "description" : "./images/agile-software-development.jpg",
+            "isFloatRight": true
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tshepo's Webpage (Materialize)</title>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        img {
+            height: 250px;
+            width: 250px;
+            padding: 1em;
+        }
+
+        .header {
+            background-image: url("images/TM.jpg");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            padding-left: 0.1em;
+        }
+
+        h2 {
+            background-image: url(./images/cool-backgrounds.jpg);
+            padding-left: 1em;
+            padding-bottom: 0.1em;
+            margin-top: 0.1em;
+            color: white;
+        }
+
+        table {
+            background-color: black;
+            color: white;
+            border: solid blue;
+        }
+
+        .subName {
+            font-style: italic;
+            color: lightseagreen;
+            font-style: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+    <section class="header">
+        <div class="row">
+            <div class="col s12 l7" style="text-align: center;">
+                <h1>{{user.fullName}}</h1>
+            </div>
+            <div class="col s12 l5" style="text-align: center;">
+                <img src={{user.photo}}>
+            </div>
+        </div>       
+    </section>
+
+    <div class="container">
+
+        <section class="city" >
+            <h2>{{city.name}}</h2>
+            <div class="row">
+                <div class="col s12 l6" style="background-image: url(./images/PL.jpg); background-size: 100% 100%;
+                background-attachment: fixed; font-size: x-large; color: white;">
+                    <img src={{city.photo}}>
+                    <strong>{{city.name}}</strong>
+                </div>
+                <div class="col s12 l6">
+                    <strong>{{city.name}}</strong>{{city.description}}
+                </div>
+            </div>
+            <br>
+               
+        </section>
+
+        <section class="fLanguage" style="padding-bottom: 2em;">
+            <h2>{{foreignLanguage.language}}</h2>
+
+            
+            <strong>{{foreignLanguage.language}}</strong> is the most spoken language in the world. Speaking fluently in the language directly means 
+            you have the luxury of being able to communicate and connect with a significant number of people in this world.
+            <br>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>{{foreignLanguage.language}}</th>
+                    </tr>
+                </thead>
+
+                {{#each foreignLanguage.phrases}}
+                <tr>
+                    <td>{{englishPhrase}}</td>
+                    <td>{{foreignLanguage}}</td>
+                </tr>
+                {{/each}}               
+            </table>
+        </section>
+
+        <section class="subjects">
+            <h2>Bcom in Information Systems at the University of Johannesburg</h2>
+            <div class="row">
+                {{#each favouriteSubjects}}
+                {{#if this.isFloatRight}}
+                <div class="subName col s6 l1" style="padding-top: 6em;">
+                    <strong>{{name}}</strong>
+                </div>
+                <div class="float col s6 l3">
+                    <img src={{description}}>
+                </div>
+                {{else}}
+                <div class=" subName col s6 l1" style="padding-top: 6em;">
+                    <strong>{{name}}</strong>
+                </div>
+                <div class="col s6 l3">
+                    <img src={{description}}>
+                </div>
+                {{/if}}
+                {{/each}}
+
+            </div>
+            
+        </section>  
+    </div>
+
+</body>
+</html>
