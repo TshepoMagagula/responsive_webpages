@@ -19,21 +19,21 @@
     <div class= "container">
 
         <section class="header">
-            <h1>{{user.fullName}}</h1>
+            <h1>{{data.user.fullName}}</h1>
             <img src= "{{data.user.photo}}">
         </section>
 
         <section class= "city">
-            <h2>{{city.name}}</h2>
-            {{city.description}}
+            <h2>{{data.city.name}}</h2>
+            {{data.city.description}}
             <br>
-            <img src= "{{city.photo}}">    
+            <img src= "{{data.city.photo}}">    
         </section>
         <section class= "fLanguages">
-            <h2>{{foreignLanguage.language}}</h2>
+            <h2>{{data.foreignLanguage.language}}</h2>
 
         
-            Port Louis is the capital city of Mauritius, in the Indian Ocean. It's known for 
+            <string>Port Louis</string> is the capital city of Mauritius, in the Indian Ocean. It's known for 
             its French colonial architecture and the 19th-century 
             Champ de Mars horse-racing track. The Caudan Waterfront is a lively dining 
             and shopping precinct. Nearby, vendors sell local produce and handicrafts at 
@@ -45,11 +45,11 @@
                 <thead>
                     <tr>
                         <th>English</th>
-                        <th>{{foreignLanguage.language}}</th>
+                        <th>{{data.foreignLanguage.language}}</th>
                     </tr>
                 </thead>
 
-                {{#each foreignLanguage.phrases}}
+                {{#each data.foreignLanguage.phrases}}
                 <tr>
                     <td>{{englishPhrase}}</td>
                     <td>{{foreignLanguage}}</td>
@@ -59,10 +59,10 @@
         </section>
         <section class= "subjects">
             <h2>Bcom in Information Systems at the University of Johannesburg</h2>
-            {{#each favouriteSubjects}}
+            {{#each data.favouriteSubjects}}
             <div>
                 {{name}}
-                <img src= {{description}}>
+                <img src= "{{description}}">
             </div>
             {{/each}}
         </section>

@@ -69,17 +69,17 @@
             <div class="row">
                 <div class="col-sm-12 col-lg-6" style="background-image: url(./images/PL.jpg); background-size: 100% 100%;
                 background-attachment: fixed; font-size: x-large; color: white;">
-                    <img src= "{{city.photo}}"> 
-                    <strong>{{city.name}}</strong>
+                    <img src= "{{data.city.photo}}"> 
+                    <strong>{{data.city.name}}</strong>
                 </div>
                 <div class="col-md">
-                    <strong>{{city.name}}</strong>{{city.description}} 
+                    <strong>{{data.city.name}}</strong>{{data.city.description}} 
                 </div>
             </div>  
         </section>
         <section class= "fLanguage">
             <h2>{{foreignLanguage.language}}</h2>
-            <strong>{{foreignLanguage.language}}</strong> is the most spoken language in the world. Speaking fluently in the language directly means 
+            <strong>{{data.foreignLanguage.language}}</strong> is the most spoken language in the world. Speaking fluently in the language directly means 
             you have the luxury of being able to communicate and connect with a significant number of people in this world.
             <br>
             <br>
@@ -87,11 +87,11 @@
                 <thead>
                     <tr>
                         <th>English</th>
-                        <th>{{foreignLanguage.language}}</th>
+                        <th>{{data.foreignLanguage.language}}</th>
                     </tr>
                 </thead>
 
-                {{#each foreignLanguage.phrases}}
+                {{#each data.foreignLanguage.phrases}}
                 <tr>
                     <td>{{englishPhrase}}</td>
                     <td>{{foreignLanguage}}</td>
@@ -103,7 +103,7 @@
             <h2>Bcom in Information Systems at the University of Johannesburg</h2>
             
             <div class="row">
-                {{#each favouriteSubjects}}
+                {{#each data.favouriteSubjects}}
                 {{#if this.isFloatRight}}
                 <div class="subName col-sm-6 col-lg-1"  style="margin-bottom: 1em; padding-top: 6em;">
                     <strong>{{name}}</strong>
