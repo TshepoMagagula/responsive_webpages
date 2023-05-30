@@ -54,10 +54,10 @@
     <section class = "header">
         <div class = "row">
             <div class = "col-sm-12 col-lg-6" style="text-align: center; padding-top: 3em;">
-                <h1>{{user.fullName}}</h1>
+                <h1>{{data.user.fullName}}</h1>
             </div>
             <div class = "col-sm-12 col-lg-6" style="text-align: center;">      
-                <img src= "{{user.photo}}">
+                <img src= "{{data.user.photo}}">
             </div>
         </div>
 
@@ -65,7 +65,7 @@
     <div class= "container" >
 
         <section class= "city" >
-            <h2>{{city.name}}</h2>
+            <h2>{{data.city.name}}</h2>
             <div class="row">
                 <div class="col-sm-12 col-lg-6" style="background-image: url(./images/PL.jpg); background-size: 100% 100%;
                 background-attachment: fixed; font-size: x-large; color: white;">
@@ -78,7 +78,7 @@
             </div>  
         </section>
         <section class= "fLanguage">
-            <h2>{{foreignLanguage.language}}</h2>
+            <h2>{{data.foreignLanguage.language}}</h2>
             <strong>{{data.foreignLanguage.language}}</strong> is the most spoken language in the world. Speaking fluently in the language directly means 
             you have the luxury of being able to communicate and connect with a significant number of people in this world.
             <br>
