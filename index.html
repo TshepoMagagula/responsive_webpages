@@ -16,21 +16,21 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class= "container">
 
         <section class="header">
             <h1>{{user.fullName}}</h1>
-            <img src={{user.photo}}>
+            <img src = {{user.photo}}>
+
         </section>
 
-        <section class="city">
+        <section class= "city">
             <h2>{{city.name}}</h2>
             {{city.description}}
             <br>
-            <img src={{city.photo}}>    
+            <img src= {{city.photo}}>    
         </section>
-
-        <section class="fLanguages">
+        <section class= "fLanguages">
             <h2>{{foreignLanguage.language}}</h2>
 
         
@@ -58,13 +58,12 @@
                 {{/each}}               
             </table>
         </section>
-
-        <section class="subjects">
+        <section class= "subjects">
             <h2>Bcom in Information Systems at the University of Johannesburg</h2>
             {{#each favouriteSubjects}}
             <div>
                 {{name}}
-                <img src={{description}}>
+                <img src= {{description}}>
             </div>
             {{/each}}
         </section>
