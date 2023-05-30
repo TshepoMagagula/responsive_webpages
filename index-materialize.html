@@ -57,7 +57,7 @@
                 <h1>{{user.fullName}}</h1>
             </div>
             <div class="col s12 l5" style="text-align: center;">
-                <img src= {{user.photo}}>
+                <img src= "{{user.photo}}">
                 
             </div>
         </div>       
@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col s12 l6" style="background-image: url(./images/PL.jpg); background-size: 100% 100%;
                 background-attachment: fixed; font-size: x-large; color: white;">
-                    <img src= {{city.photo}}>
+                    <img src= "{{city.photo}}">
                     <strong>{{city.name}}</strong>
                 </div>
                 <div class="col s12 l6">
@@ -111,14 +111,14 @@
                     <strong>{{name}}</strong>
                 </div>
                 <div class="float col s6 l3">
-                    <img src={{description}}>
+                    <img src="{{description}}">
                 </div>
                 {{else}}
                 <div class=" subName col s6 l1" style="padding-top: 6em;">
                     <strong>{{name}}</strong>
                 </div>
                 <div class="col s6 l3">
-                    <img src={{description}}>
+                    <img src="{{description}}">
                 </div>
                 {{/if}}
                 {{/each}}
