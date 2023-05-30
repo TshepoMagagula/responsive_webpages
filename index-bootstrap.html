@@ -57,7 +57,7 @@
                 <h1>{{user.fullName}}</h1>
             </div>
             <div class = "col-sm-12 col-lg-6" style="text-align: center;">      
-                <img src= {{user.photo}}>
+                <img src= "{{user.photo}}">
             </div>
         </div>
 
@@ -69,7 +69,7 @@
             <div class="row">
                 <div class="col-sm-12 col-lg-6" style="background-image: url(./images/PL.jpg); background-size: 100% 100%;
                 background-attachment: fixed; font-size: x-large; color: white;">
-                    <img src={{city.photo}}> 
+                    <img src= "{{city.photo}}"> 
                     <strong>{{city.name}}</strong>
                 </div>
                 <div class="col-md">
@@ -109,11 +109,11 @@
                     <strong>{{name}}</strong>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <img src={{description}}>
+                    <img src= "{{description}}">
                 </div>
                 {{else}}
                 <div class="col-sm-6 col-lg-3">
-                    <img src={{description}}>
+                    <img src= "{{description}}">
                 </div>
                 <div class="subName col-sm-6 col-lg-1"  style="margin-bottom: 1em; padding-top: 6em;">
                     <strong>{{name}}</strong>
