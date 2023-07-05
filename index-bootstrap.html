@@ -47,11 +47,37 @@
             font-style: bold;
         }
 
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li {
+            float: right;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
     </style>
 
 </head>
 <body>
     <section class = "header">
+        <ul>
+            <li><a href="index-bootstrap.html">Bootstrap</a></li>
+            <li><a href="index-materialize.html">Materialize</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
         <div class = "row">
             <div class = "col-sm-12 col-lg-6" style="text-align: center; padding-top: 3em;">
                 <h1>{{data.user.fullName}}</h1>
